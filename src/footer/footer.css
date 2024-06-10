@@ -1,0 +1,118 @@
+.scompbtnparent{
+    width: 11rem;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 6px;
+    padding-top: 1.5%;
+    height: 6.5vh;
+    /* padding-bottom: 1%; */
+    display: flex;
+    align-items: center;
+}
+.scompbtnparent a{
+display: flex;
+text-align: center;
+color: #ffffff;
+}
+.ap{
+    text-decoration: none;
+}
+.apple{
+    font-size: 40px;
+    margin-top: 7%;
+}
+.bold{
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: -2px;
+}
+.iconrow{
+    display: flex;
+    gap: 10%;
+    border-right: 3px solid #eee;
+   background-color: #f6f7f8;
+   margin-top: 4.5%;
+   align-items: center;
+   padding-left: 7%;
+}
+.amazingdeals{
+    font-size: 25px;
+    font-weight: 550;
+}
+.red2{
+    font-size: 25px;
+    font-weight: 550;
+    color: #E00000;
+}
+.gap{
+    display: flex;
+    gap: 1%;
+    margin-top: 2.1%;
+    margin-left: 6%;
+}
+.playstore{
+    width: 20%;
+    height: 6vh;
+    margin-left: 0.2em;
+    margin-top: 7%;
+}
+.download{
+    font-size: 12px;
+}
+.ph{
+    margin-right: 5%;
+}
+.finalft{
+    display: flex;
+    width: 100%;
+    background-color:#f6f7f8;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 30rem; */
+}
+.ftleft{
+    padding-right: 52%;
+}
+.group{
+text-align: center;
+font-size: 16px;
+font-weight: 550;
+padding-top: 5%;
+line-height: 20px;
+}
+.group2{
+  text-align: center;
+font-size: 12px;
+font-weight: 550;
+color: #E00000;
+padding-left: 3%;
+}
+.ft{
+    opacity: 80%;
+    font-size: 12px;
+    color: #000;
+    margin-top: -12px;
+}
+
+/* long footer starts here */
+
+.sfootp{
+    display: flex;
+    flex-direction: column;
+    background-color:#f6f7f8;
+    padding-left: 8%;
+    padding-top: 3%;
+    line-height: 27px;
+    width: 100%;
+}
+.sfootp a{
+    text-decoration: none;
+    color: #109ce4;
+}
+.sfootp a:hover{
+   opacity: 75%;
+    
+}
+.sfooterp{
+    display: flex;
+}

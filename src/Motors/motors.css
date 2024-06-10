@@ -1,0 +1,85 @@
+.bg-div{
+    background-image: url(../assets/car6.png);
+    background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  /* object-fit: contain; */
+
+}
+.mdivContainer{
+  margin-left: 6.7%;  
+  margin-right: 6%;  
+}
+.p-bg{
+font-weight: 530;
+font-size: 35px;
+}
+.inputName{
+  width: 75%;
+    height: 9vh;
+    border-radius: 10px;
+    border: none;
+}
+.motorsearch{
+  position: absolute;
+    font-size: 27px;
+right: 19%;
+top: 50.7%;
+border-radius: 7px;
+background-color: #e00000;
+color: #fff;
+border: none;
+cursor: pointer;
+font-size: 13px;
+padding: 0.9%;
+}
+.categorydiv{
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+.popular{
+font-size: 27px;
+font-weight: 600;
+padding-top: 1.4%;
+}
+
+/* single category styling */
+.scomp3p{
+    text-decoration: none;
+}
+.scomp3p:hover{
+  box-shadow:5px 1px 6px 2px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: 1s;
+    border-radius: 7px;
+}
+.mcategoryimg{
+  width: 360px;
+  height: 40vh;
+  border-radius: 7px;
+  object-fit: cover;
+} 
+.red{
+    color: #E00000;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 20px;
+}
+.type{
+    color: #000000;
+    font-size: 17px;
+    margin-top: -20px;
+}
+.address{
+    color: #000000;
+    opacity: 83%;
+    padding-bottom: 3%;
+    margin-top: -14px;
+}
