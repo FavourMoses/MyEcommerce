@@ -1,5 +1,4 @@
 import Secondfooter from "./footerlong";
-
 const Footlong = () => {
     return (
       <div className="sfooterp">

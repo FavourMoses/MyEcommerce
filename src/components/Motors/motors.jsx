@@ -1,113 +1,43 @@
 // import Nav from "../nav1/nav1";
-import "./motors.css"
+import "./motors.css";
 import { useState } from "react";
 
-import carmercedes1 from "./../assets/carmercedes1.png";
-import carmercedes2 from "./../assets/carmercedes2.png";
-import carmercedes3 from "./../assets/carmercedes3.png";
-import carmercedes4 from "./../assets/carmercedes4.png";
-import carmercedes5 from "./../assets/carmercedes5.png";
-import carmercedes6 from "./../assets/carmercedes6.png";
 
-import carlamb1 from "./../assets/carlamb1.png";
-import carlamb2 from "./../assets/carlamb2.png";
-import carlamb3 from "./../assets/carlamb3.png";
-import carlamb4 from "./../assets/carlamb4.png";
-import carlamb5 from "./../assets/carlamb5.png";
-import carlamb6 from "./../assets/carlamb6.png";
+import carmercedes1 from "../../assets/carmercedes1.png";
+import carmercedes2 from "../../assets/carmercedes2.png";
+import carmercedes3 from "../../assets/carmercedes3.png";
+import carmercedes4 from "../../assets/carmercedes4.png";
+import carmercedes5 from "../../assets/carmercedes5.png";
+import carmercedes6 from "../../assets/carmercedes6.png";
 
-import carjeep1 from "./../assets/carjeep1.png";
-import carjeep2 from "./../assets/carjeep2.png";
-import carjeep3 from "./../assets/carjeep3.png";
-import carjeep4 from "./../assets/carjeep4.png";
-import carjeep5 from "./../assets/carjeep5.png";
-import carjeep6 from "./../assets/carjeep6.png";
+import carlamb1 from "../../assets/carlamb1.png";
+import carlamb2 from "../../assets/carlamb2.png";
+import carlamb3 from "../../assets/carlamb3.png";
+import carlamb4 from "../../assets/carlamb4.png";
+import carlamb5 from "../../assets/carlamb5.png";
+import carlamb6 from "../../assets/carlamb6.png";
 
-import car1 from "./../assets/car1.png";
-import car2 from "./../assets/car2.png";
-import car3 from "./../assets/car3.png";
-import car4 from "./../assets/car4.png";
-import car5 from "./../assets/car5.png";
-import car6 from "./../assets/car6.png";
+import carjeep1 from "../../assets/carjeep1.png";
+import carjeep2 from "../../assets/carjeep2.png";
+import carjeep3 from "../../assets/carjeep3.png";
+import carjeep4 from "../../assets/carjeep4.png";
+import carjeep5 from "../../assets/carjeep5.png";
+import carjeep6 from "../../assets/carjeep6.png";
+
+import car1 from "../../assets/car1.png";
+import car2 from "../../assets/car2.png";
+import car3 from "../../assets/car3.png";
+import car4 from "../../assets/car4.png";
+import car5 from "../../assets/car5.png";
+import car6 from "../../assets/car6.png";
 import Nav from "../nav1/nav1";
 import Footlong from "../footer/footl2";
 import Foot from "../footer/footer";
 import Footer1 from "../footer/footer1";
 
+import CircularProgress from "@mui/material/CircularProgress";
+
 const Motor = () => {
-  // Sample list of items with categories
-  //   const itemList = [
-  //     {
-  //       id: 1,
-  //       image:"https://dbz-images.dubizzle.com/images/2024/06/05/aa7266c9b4e64e4aa607f5ffa64f007b-.jpeg?impolicy=thumb&imwidth=240",
-  //       name: "jeep",
-  //       category: "Category A",
-  //     },
-  //     { id: 2, name: "Item 2", category: "Category B" },
-  //     { id: 3, name: "Item 3", category: "Category A" },
-  //     { id: 4, name: "Item 4", category: "Category C" },
-  //     { id: 5, name: "Item 4", category: "Category C" },
-  //     { id: 6, name: "Item 4", category: "Category C" },
-  //     // Add more items as needed
-  //   ];
-
-  //   // State to hold the search query and filtered items
-  //   const [searchQuery, setSearchQuery] = useState("");
-  //   const [filteredItems, setFilteredItems] = useState(itemList);
-
-  //   // Function to handle search input change
-  //   const handleSearchChange = (event) => {
-  //     setSearchQuery(event.target.value);
-  //   };
-
-  //   // Function to handle search button click
-  //   const handleSearch = () => {
-  //     const filtered = itemList.filter((item) =>
-  //       item.category.toLowerCase().includes(searchQuery.toLowerCase())
-  //     );
-  //     setFilteredItems(filtered);
-  //   };
-
-  //   return (
-  //     <div>
-  //       <Nav />
-  //       <div className="mdivContainer">
-  //         <div className="bg-div">
-  //           <p className="p-bg">The leading marketplace to buy and sell cars </p>
-  //           <input
-  //             type="text"
-  //             placeholder="Search category..."
-  //             value={searchQuery}
-  //             onChange={handleSearchChange}
-  //             className="inputName"
-  //           />
-  //           <button onClick={handleSearch} className="motorsearch">
-  //             Search
-  //           </button>
-  //         </div>
-
-  // <div className="cart-item">
-  //         {filteredItems.map((item) => (
-  //           <div key={item.id}>
-  //             <img src={item.image} alt={item.name} className="cartimg" />
-  //             {item.name} - {item.category}
-  //           </div>
-  //         ))}
-  //       </div>
-
-  //         {/* <ul>
-  //           {filteredItems.map((item) => (
-  //             <li key={item.id}>
-  //               <img src={itemList.img} alt={item.name} className="motorimg" />
-  //               {item.name} - {item.category}
-  //             </li>
-  //           ))}
-  //         </ul> */}
-  //       </div>
-  //     </div>
-  //   );
-  // };
-
   const itemList = [
     {
       id: 1,
@@ -308,6 +238,8 @@ const Motor = () => {
   // State to store user input and search result
   const [input, setInput] = useState("");
   const [result, setResult] = useState([]);
+  // State to manage loader visibility
+  const [loading, setLoading] = useState(false);
 
   // Function to handle user input
   const handleInputChange = (e) => {
@@ -315,20 +247,39 @@ const Motor = () => {
   };
 
   // Function to handle search action
+  // const handleSearch = () => {
+  //   const items = itemList.filter(
+  //     (item) => item.name.toLowerCase() === input.toLowerCase()
+  //   );
+
+  //   if (items.length > 0) {
+  //     setResult(items);
+  //   } else {
+  //     setResult([{ name: input, category: "Not found", img: null }]);
+  //   }
+  //   console.log("Filtered items:", items);
+
+  // Function to handle search action with loader
   const handleSearch = () => {
-    const items = itemList.filter(
-      (item) => item.name.toLowerCase() === input.toLowerCase()
-    );
-    
-    if (items.length > 0) {
-      setResult(items);
-    } else {
-      setResult([{ name: input, category: "Not found", img: null }]);
-    }
-    console.log("Filtered items:", items);
-    
+    // Show loader
+    setLoading(true);
 
+    // Simulate loading with a 3-second timer
+    setTimeout(() => {
+      // Your existing search logic
+      const items = itemList.filter((item) =>
+        item.name.toLowerCase().includes(input.toLowerCase().slice(0, 2))
+      );
 
+      if (items.length > 0) {
+        setResult(items);
+      } else {
+        setResult([{ name: input, category: "Not found", img: null }]);
+      }
+
+      // Hide loader after search is completed
+      setLoading(false);
+    }, 3000); // 3-second delay
   };
   return (
     <div style={{ padding: "20px" }}>
@@ -343,19 +294,27 @@ const Motor = () => {
             onChange={handleInputChange}
             className="inputName"
           />
-          <button onClick={handleSearch} className="motorsearch">
-            Search
+          <button
+            onClick={handleSearch}
+            className="motorsearch"
+            disabled={loading}
+          >
+            {/* Search */}
+            {loading ? (
+              <CircularProgress size={24} color="inherit" />
+            ) : (
+              "Search"
+            )}
             {/* check for secular progress in mui */}
           </button>
         </div>
 
         <p className="popular">Popular in cars</p>
 
-
         {/* this will appear based on typed input */}
         <div className="categorydiv">
-          {result.length > 0 && 
-          // loading===false
+          {result.length > 0 &&
+            // loading===false
             result.map((item, index) => (
               <a href="" key={index} className="scomp3p">
                 {item.img && (
@@ -372,7 +331,7 @@ const Motor = () => {
             ))}
         </div>
 
-{/* constant images items */}
+        {/* constant images items */}
         <div className="categorydiv">
           {defaultItems.length > 0 &&
             defaultItems.map((item, index) => (
@@ -391,9 +350,11 @@ const Motor = () => {
             ))}
         </div>
       </div>
-      <Footer1/><br/><br/>
-      <Footlong/>
-      <Foot/>
+      <Footer1 />
+      <br />
+      <br />
+      <Footlong />
+      <Foot />
     </div>
   );
 };

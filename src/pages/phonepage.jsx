@@ -1,9 +1,7 @@
-import Phone from "../phone/phone";
+import Phone from "../components/phone/phone";
 
 const Phonepage = () => {
-    return ( 
-        <Phone/>
-     );
-}
- 
+  return <Phone />;
+};
+
 export default Phonepage;

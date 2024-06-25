@@ -1,0 +1,116 @@
+.FGContainer{
+  margin-left: 2%;  
+  margin-right: 6%;  
+}
+
+.FG_back_ground{
+    background-image: url(../../assets/FG1.png);
+    background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 50vh;
+  display: flex; 
+  margin-bottom: 2%;
+  color: #000;
+  justify-content: right;
+  padding-right: 4.8%;
+  margin-left: 7%;
+}
+.FGadvertisement{
+    color: #ffffff;
+}
+
+#city-select-label{
+    font-weight:800;
+     top: 10px;
+    left: 8px;
+}
+.FGdiv1 label{
+    display: block;
+}
+.FG-parent-d1-input1{
+    border: none;
+    outline: none;
+}
+.FG-parent-d1{
+    /* border-right: 1px solid #c0c0c0; */
+    width: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1%;  
+}
+.FG-parent-d1-p{
+    color: rgb(56, 55, 55);
+}
+.FG-parent{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    /* width: 100%; */
+    height: 8vh;
+}
+.FG-icon{
+   margin-top: -8%;
+    margin-left: 90%;
+}
+
+
+
+.parentalMargin{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.nig-classified{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    margin-top: 1%;
+    margin-bottom: -1%;
+}
+.nig-classified a{
+    text-decoration: none;
+}
+.div-buy-ss{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buy-sort-save{
+    display: flex;
+gap: 4%;
+}
+.sort{
+    display: flex;
+    border: 2px solid #eee;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    align-items: center;
+    height: 5vh;
+    border-radius: 8px;
+     width: 10rem;
+     justify-content: center;
+}
+.saveSearch{
+    border: 2px solid #eee;
+    border-radius: 8px;
+    width: 8rem;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* before footer */
+.numberdiv button{
+    /* padding: 20px; */
+    background-color: #ffffff;
+    border: 1px solid  rgb(147, 145, 145);
+    margin-right: 1%;
+    width: 3.5%;
+    height: 6.5vh;
+    border-radius: 5px;
+}
+.location-date{
+    display: flex;
+}

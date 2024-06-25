@@ -1,5 +1,5 @@
 import "./footer.css"
-import footerlogo from "../assets/footerlogo.png";
+import footerlogo from "../../assets/footerlogo.png"
 import { PiCopyrightLight } from "react-icons/pi";
 const Foot = () => {
   return (

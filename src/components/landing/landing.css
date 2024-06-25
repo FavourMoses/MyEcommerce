@@ -1,0 +1,131 @@
+.boss{
+  font-size: 40px;
+  text-align: center;
+}
+.boss2{
+  color: #6b3c3c;
+}
+/* .himg{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+} */
+.hd1{
+  background-image: url(../../assets/image1.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+.hp1{
+    /* margin-left: 40%; */
+    color: #ffffff;
+    font-size: 50px;
+    padding-top: 6%;
+    text-align: center;
+}
+.hp2{
+  color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3%;
+}
+.comp1{
+  width: 14%;
+  height: 17vh;
+  background-color: #ffffff;
+  text-align: center;
+  align-content: center;
+cursor: auto;
+  border: 1px solid #EEE;
+    border-radius: 6px;
+    transition:1s ease;
+}
+
+.comp1:hover{
+    border: 1px solid #E00000;
+    color: #E00000;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .1);
+}
+.atag{
+  text-decoration: none;
+  font-size: 14px;
+  color: #2B2D2E;
+}
+.atag:hover{
+color: #E00000;
+}
+.compdiv{
+  display: flex;
+  justify-content: center;
+  margin-top: -4%;
+  gap: 1.5%;
+}
+.compdiv2{
+  display: flex;
+  justify-content: center;
+  gap: 1.5%;
+  margin-top: 1.5%;
+}
+.join{
+  text-align: center;
+  font-size: 27px;
+  padding-top: 5%;
+}
+.hcomp2{
+  display: flex;
+  gap: 7%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-top: 5%;
+  justify-content: center;
+  line-height: 32px;
+}
+.hcomp3{
+  display: flex;
+  gap: 7%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-top: 5%;
+  justify-content: center;
+  line-height: 32px;
+}
+.h3 a{
+  text-decoration: none;
+  color: #2B2D2E;
+  transition: 0.5s;
+}
+.h3 a:hover{
+  color: #109ce4;
+  text-decoration: underline;
+}
+.hcdiv1 p a{
+  color: #109ce4;
+  text-decoration: none;
+  font-size: 14px;
+}
+.hcdiv1 p a:hover{
+  text-decoration: underline;
+}
+.group{
+text-align: center;
+font-size: 30px;
+font-weight: 550;
+padding-top: 5%;
+line-height: 20px;
+}
+.group2{
+  text-align: center;
+font-size: 24px;
+font-weight: 550;
+color: #E00000;
+padding-left: 3%;
+}
+.foot{
+  text-align: center;
+  padding-top: 2%;
+  font-weight: 550;
+  opacity: 96%;
+}

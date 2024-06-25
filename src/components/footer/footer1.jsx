@@ -1,7 +1,7 @@
-import doublephone from "../assets/doublephone.png";
+import doublephone from "../../assets/doublephone.png";
 import { FaApple } from "react-icons/fa";
-import playstore2 from "../assets/playstore2.png";
-import app_gallery from "../assets/app_gallery.png";
+import playstore2 from "../../assets/playstore2.png";
+import app_gallery from "../../assets/app_gallery.png";
 import "./footer.css";
 const Footer1 = () => {
     return ( 

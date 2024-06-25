@@ -53,9 +53,9 @@ const Nav = () => {
         <a href="">Property for Sale</a>
         <a href="">Jobs</a>
         <a href="">Classifieds</a>
-        <a href="">Furniture and garden</a>
+        <a href="/furniture-garden">Furniture and garden</a>
         <a href="/phone">Mobiles and Tablets</a>
-        <a href="">Communty</a>
+        <a href="/community">Community</a>
       </div>
     </div>
   );

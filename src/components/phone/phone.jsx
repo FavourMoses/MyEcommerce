@@ -1,7 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Nav from "../nav1/nav1";
-import './phone.css';
+import "./phone.css";
+import Footer1 from "../footer/footer1";
+import Footlong from "../footer/footl2";
+import Foot from "../footer/footer";
 const accessToken = import.meta.env.VITE_APP_UNSPLASH_KEY;
 
 const Phone = () => {
@@ -45,20 +48,19 @@ const Phone = () => {
 
   console.log(combinedData);
 
-//   useEffect(() => {
-//     fetchIphones();
-//   }, []);
+  //   useEffect(() => {
+  //     fetchIphones();
+  //   }, []);
 
-
-useEffect(() => {
-  const savedIphones = localStorage.getItem("iphones");
-  console.log(savedIphones)
-  if (savedIphones) {
-    setIphones(JSON.parse(savedIphones));
-  } else {
-    fetchIphones();
-  }
-}, []);
+  useEffect(() => {
+    const savedIphones = localStorage.getItem("iphones");
+    console.log(savedIphones);
+    if (savedIphones) {
+      setIphones(JSON.parse(savedIphones));
+    } else {
+      fetchIphones();
+    }
+  }, []);
   return (
     <div style={{ padding: "20px" }}>
       <Nav />
@@ -74,22 +76,42 @@ useEffect(() => {
           </button>
 
           <button className="under_button">
-            <a href="">Mobile Phones & Tablet Accessories</a>
+            <a href="/accesories">Mobile Phones & Tablet Accessories</a>
           </button>
 
           <button className="under_button">
-            <a href="">Tablets </a>
+            <a href="laptop">Laptops</a>
           </button>
 
-          
-            <button className="under_button">
-            <a href=""> Other Mobile Phones & Tablets</a> 
-            </button>
+          <button className="under_button">
+            <a href="other"> Other Mobile Phones,Tablets & Laptops</a>
+          </button>
         </div>
-        {combinedData.map((item) => (
-          <img key={item.id} src={item.image} />
-        ))}
+
+        <div>
+          {combinedData.map((item) => (
+            <div key={item.id} className="phone_row">
+              <div className="ph-img-div">
+                <img
+                  className="phone-image"
+                  src={item.image}
+                  alt={item.iphone_name}
+                />
+              </div>
+              <div className="phone-ph">
+                <p className="pcolor">{item.color}</p>
+                <h3 className="pname">{item.iphone_name}</h3>
+                <p className="phone_price">${item.price}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
+      <Footer1 />
+      <br />
+      <br />
+      <Footlong />
+      <Foot />
     </div>
   );
 };

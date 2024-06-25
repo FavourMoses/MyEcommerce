@@ -1,7 +1,9 @@
-import Motors from "../Motors/motors";
+// import Motors from "../Motors/motors";
+
+import Motor from "../components/Motors/motors";
 
 const Motorpage = () => {
-    return ( <Motors/> );
+    return ( <Motor/> );
 }
  
 export default Motorpage;

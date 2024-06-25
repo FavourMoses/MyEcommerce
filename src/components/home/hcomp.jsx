@@ -3,7 +3,6 @@ import { IoIosSearch } from "react-icons/io";
 const Scomp = () => {
   return (
     <div className="scontain">
-      {/* <div className="soverlay"> */}
         <p className="spara">
           The best place to buy your house, sell your car or find a job in
           Nigeria
