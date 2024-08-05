@@ -6,7 +6,7 @@ import "./secland.css"
 
 
 
-import { FaCar } from "react-icons/fa";
+import { FaArrowRight, FaCar } from "react-icons/fa";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { FaBuildingColumns } from "react-icons/fa6";
 import { FaIdCardAlt } from "react-icons/fa";
@@ -244,14 +244,18 @@ const Secland = () => {
         </div>
         <div className="scheck">
           <div className="scheck2">
-            <img src={checksecond} alt="check" />
-            <h4>Got a verified batch yet? </h4>
-            <p>Get more visibility | Enhance your credibility</p>
+            <img className="check_img" src={checksecond} alt="check" />
+            <div className="verified">
+              <h4>Got a verified batch yet? </h4>
+              <p>Get more visibility | Enhance your credibility</p>
+            </div>
           </div>
           <button className="getstarted">Get started</button>
+
+          <FaArrowRight className="start_arrow" />
         </div>
 
-        <p className="popular">Popular in Residential for Rent</p>
+        <p className="popular_1">Popular in Residential for Rent</p>
         <div className="firstflex">
           <div className="residential">
             <Scomp3
@@ -300,7 +304,7 @@ const Secland = () => {
           </div>
         </div>
 
-        <p className="popular">Popular in cars</p>
+        <p className="popular_1">Popular in cars</p>
         <div className="firstflex">
           <div className="residential">
             <Scomp3
@@ -349,7 +353,7 @@ const Secland = () => {
           </div>
         </div>
 
-        <p className="popular">Popular in Furniture and Garden</p>
+        <p className="popular_1">Popular in Furniture and Garden</p>
         <div className="firstflex">
           <div className="residential">
             <Scomp3
@@ -398,7 +402,7 @@ const Secland = () => {
           </div>
         </div>
 
-        <p className="popular">Popular in Residential for Sale</p>
+        <p className="popular_1">Popular in Residential for Sale</p>
         <div className="firstflex">
           <div className="residential">
             <Scomp3
@@ -447,7 +451,7 @@ const Secland = () => {
           </div>
         </div>
 
-        <p className="popular">Popular in Computers and Networking</p>
+        <p className="popular_1">Popular in Computers and Networking</p>
         <div className="firstflex">
           <div className="residential">
             <Scomp3
@@ -496,7 +500,7 @@ const Secland = () => {
           </div>
         </div>
 
-        <p className="popular">Mobile phones and tablets</p>
+        <p className="popular_1">Mobile phones and tablets</p>
         <div className="firstflex">
           <div className="residential">
             <Scomp3
@@ -545,7 +549,7 @@ const Secland = () => {
           </div>
         </div>
 
-        <p className="popular">Popular Rooms for Rent</p>
+        <p className="popular_1">Popular Rooms for Rent</p>
         <div className="firstflex">
           <div className="residential">
             <Scomp3
@@ -594,7 +598,7 @@ const Secland = () => {
           </div>
         </div>
 
-        <p className="popular">Popular in Sports Equipment</p>
+        <p className="popular_1">Popular in Sports Equipment</p>
         <div className="firstflex">
           <div className="residential">
             <Scomp3

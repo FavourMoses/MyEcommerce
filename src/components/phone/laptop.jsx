@@ -151,7 +151,7 @@ const Laptop = () => {
           <h1 className="advertisement">Advertisement</h1>
         </div>
         <div>
-          <h1>Buy & Sell Laptops Online in Nigeria</h1>
+          <h1 className="buysell">Buy & Sell Laptops Online in Nigeria</h1>
           <button className="under_button">
             <a href="">Mobile Phones</a>
           </button>

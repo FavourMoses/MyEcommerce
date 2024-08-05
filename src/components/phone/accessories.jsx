@@ -165,7 +165,9 @@ const Accessories = () => {
           <h1 className="advertisement">Advertisement</h1>
         </div>
         <div>
-          <h1>Buy & Sell Mobile Phones & Tablets Online in Nigeria</h1>
+          <h1 className="buysell">
+            Buy & Sell Mobile Phones & Tablets Online in Nigeria
+          </h1>
           <button className="under_button">
             <a href="">Mobile Phones</a>
           </button>
@@ -206,7 +208,7 @@ const Accessories = () => {
           ))}
         </div>
       </div>
-      <Footer1/>
+      <Footer1 />
       <br />
       <br />
       <Footlong />

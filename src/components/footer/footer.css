@@ -116,3 +116,26 @@ padding-left: 3%;
 .sfooterp{
     display: flex;
 }
+@media screen and (max-width: 600px) {
+ .iconrow{
+    display: none;
+ }  
+ .finalft {
+    display: none;
+ }
+ .sfooterp{
+    display: none;
+ }
+}
+
+@media screen and (max-width: 940px) {
+.iconrow{
+    display: none;
+ }  
+ .finalft {
+    display: none;
+ }
+ .sfooterp{
+    display: none;
+ }
+}

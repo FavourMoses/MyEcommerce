@@ -40,6 +40,15 @@
     justify-content: center;
     padding-left: 1%;  
 }
+.FG-parent-d1-filter{
+    /* border-right: 1px solid #c0c0c0; */
+    width: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1%;  
+    margin-top: 1%;
+}
 .FG-parent-d1-p{
     color: rgb(56, 55, 55);
 }
@@ -113,4 +122,526 @@ gap: 4%;
 }
 .location-date{
     display: flex;
+}
+
+.FG-parent-d1-p {
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px;
+}
+.FG-parent-d5-p{
+   cursor: pointer;
+  display: inline-block;
+  margin: 20px; 
+}
+/* The Modal (background) */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 55%;
+  width: 30%;
+  height: 100%;
+  overflow: auto;
+  
+  /* background-color: rgba(0, 0, 0, 0.4); */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: none;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2);
+  width: 76.5%;
+  border-left: 1px solid #eee;
+ /* line-height: 1%; */
+  
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* the end */
+
+.FG-arrowdown{
+    font-size: 20px;
+    margin-left: 60%;
+}
+.city-modal{
+    border: 2px solid #eee;
+    padding: 3px 20px;
+    border-radius: 19px;
+    
+}
+.city-modal a{
+text-decoration: none;
+color: rgb(56, 55, 55);
+}
+.div-city-modal{
+display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+   /* overflow-y: scroll; */
+}
+.apply-filters{
+    background-color: rgb(56, 55, 55);
+    color: #ffffff;
+    width: 98%;
+    height: 8vh;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 17px;
+    border: none;
+}
+.Nmodal {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  left: 38%;
+  top: 83%;
+  width: 23%;
+  height: 20vh;
+  /* overflow-y: scroll; */
+}
+.city-Nmodal{
+    border: 0.2px solid #eee;
+    padding: 10px 20px;
+    /* border-radius: 19px; */
+    width: 80%;
+    
+    
+}
+.city-Nmodal a{
+text-decoration: none;
+color: rgb(56, 55, 55);
+
+}
+.city-Nmodal a:hover{
+text-decoration: none;
+color: blue;
+}
+.Nmodal-content{
+     background-color: #fefefe;
+  margin: auto;
+  border: none;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  border-left: 1px solid #eee;
+  overflow-y: scroll;
+height: 30vh;
+}
+/* price filter */
+.Pmodal {
+          position: absolute;
+          top: 85%;
+          left: 54%;
+          width: 30%;
+          height: 23vh;
+          
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .Pmodal-content {
+          background: white;
+          padding: 20px;
+          padding-left: 4%;
+          border-radius: 5px;
+          text-align: center;
+          box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2);
+          border-left: 1px solid #eee;
+          width: 100%;
+          height: 100%;
+          margin-top: 10%;
+          
+        }
+        .Pcontent{
+display: flex;
+gap: 4%;
+        }
+        .Pcontent input{
+            height: 7vh;
+            border-radius: 7px;
+            outline: none;
+            border: 2px solid #e0dede;
+        }
+        .Pmodal-buttons {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+        }
+        .div-price-filter{
+            right: 800;
+            position: relative;
+            top: 100rem;
+        }
+.FG-image{
+width: 400px;
+height: 40vh;
+margin-bottom: 10%;
+object-fit: cover;
+border-radius: 7px;
+}
+.FG-price-d1{
+   width: 2000px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    padding-left: 1%;   
+}
+.price-down{
+    margin-left: 30px;
+   font-size: 19px; 
+   margin-top: 10%;
+
+}
+.FG-price-d1-p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+.contentLabel{
+    display: block;
+    margin-right: 75%;
+}
+.priceClose{
+    float: right;
+    margin-top: -2%;
+    cursor: pointer;
+}
+.prClear{
+    width: 25%;
+    height: 7vh;
+    border-radius: 6px;
+    border: 1px solid #bebebe;
+    font-size: 16px;
+}
+.prFilter{
+    background-color: rgb(56, 55, 55);
+    color: #ffffff;
+    width: 67%;
+    height: 7.4vh;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 17px;
+    border: none;
+    margin-right: 0.1%;
+}
+.premium-div{
+    display: flex;
+    gap: 100%;
+}
+.premium{
+    color: #ffffff;
+    background-color: rgb(231, 159, 52);
+    padding-left:3%;
+    padding-right:3%;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    font-size: 15px;
+    border-radius: 6px;
+}
+.filter-modal{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  /* left: 3; */
+  right: 0.1%;
+  top: 83%;
+  width: 40%;
+  height: 20vh;
+  /* overflow-y: scroll; */
+}
+.filter-inp{
+    display: block;
+    width: 90%;
+    margin-top: 2%;
+    height: 6.5vh;
+    border-radius: 6px;
+    border: 2px solid #eee;
+    outline: none;
+    padding-left: 6%;
+    
+}
+.filter-inner-div{
+    padding-left: 4%;
+    position: relative;
+}
+.filter-modal-content{
+    background-color: #fefefe;
+  margin: auto;
+  border: none;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  border-left: 1px solid #eee;
+  overflow-y: scroll;
+height: 30vh;
+
+padding-top: 3%;
+}
+.search-filter-icon{
+    font-size: 25px;
+    position: absolute;
+top: 40px;
+   left: 5.0%;
+}
+.age-div{
+    border-top: 2px solid #eee;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* border-bottom: 2px solid #eee; */
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+.age-div strong{
+    padding-left: 4%;
+}
+.ad-flex1{
+    display:flex;
+    gap: 10%;
+    padding-left: 4%;
+    margin-top: 2%;
+}
+.ad-flex1 a{
+    border: 2px solid #eee;
+    padding: 2%;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #000;
+}
+#filter-viewmore{
+    color: rgb(0, 110, 255);
+    font-weight: 800;
+}
+#filter-viewmore2{
+    border: 2px solid #eee;
+    padding: 2%;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+    font-weight: 800;
+    margin-left: 4%;
+    margin-top: -10%;
+}
+.fvm2-div{
+    margin-top: 5%;
+}
+#round{
+    margin-left: 2%;
+}
+.filter-check-div{
+    display: flex;
+    padding-left: 4%;
+    align-items: center;
+    gap: 1%;
+}
+/* Hide the default checkbox */
+.custom-checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Style the checkbox when checked */
+.custom-checkbox:checked {
+  
+  background-color: #ffffff;
+  border-color: red;
+}
+
+.custom-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid red;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.Pmodal-buttons2 {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+          margin-left: 4%;
+        }
+
+
+
+@media screen and (max-width: 940px) {
+   .FG_back_ground{
+    margin-top: 30%;
+    height: 9vh;
+    width: 90%;
+    margin-left: 2.5%;
+   } 
+   .FGadvertisement{
+    font-size: 14px;
+   }
+  .FG-parent-d1{
+   border: 1px solid #000;
+    margin-right: 20px;
+    font-size: 10px;
+    border-radius: 50px;
+    align-items: center;
+    width: 86rem;
+    height: 13vh;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  hr{
+    display: none;
+  }
+  .FG-parent-d1-p{
+    margin-top: 40px;
+    margin-left: -30px;
+  }
+  .FG-arrowdown{
+    margin-top: -1%;
+  }
+  .FG-parent{
+    overflow-x: scroll;
+    border: none;
+    height: 8vh;
+}
+.FG-price-d1-p{
+   border: 1px solid #000;
+   width: 9rem; 
+   height: 13.5vh;
+   border-radius: 27px;
+   font-size: 12px;
+   margin-top: 0.5%;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.FG-parent-d5-p{
+    border: 1px solid #000;
+   width: 7rem; 
+   height: 11vh;
+   border-radius: 27px;
+   font-size: 12px;
+   margin-top: 40%;
+   margin-left: -70px;
+   padding-left: 10%;
+   padding-top: 7%;
+}
+.nig-classified{
+    margin-top: 2%;
+}
+.div-buy-ss{
+    font-size: 12px;
+}
+.premium-div{
+    font-size: 13px;
+}
+/* .color-age-condition{
+    margin-top: -9%;
+} */
+.catprice{
+    margin-top: -9%;
+    line-height: 13px;
+    font-size: 13px;
+}
+.colour-div2{
+    font-size: 10px;
+}
+.premium-div{
+gap: 70%;
+}
+.premium{
+    color: #ffffff;
+    background-color: rgb(231, 159, 52);
+    padding-left:3%;
+    padding-right:3%;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    font-size: 10px;
+    border-radius: 6px;
+}
+}
+
+@media screen and (max-width: 600px) {
+ .FG_back_ground{
+    margin-top: 50%;
+ }
+ .FG-parent-d1{
+   border: 1px solid #000;
+   width: 75rem;
+    height: 5vh;
+    border-radius: 20px;
+ }
+ .FG-parent{
+    overflow-x: scroll;
+    margin-top: 6%;
+ }
+ .FG-price-d1-p{
+   border: 1px solid #000;
+   width: 6rem; 
+   height: 5vh;
+   border-radius: 20px;
+   font-size: 12px;
+   margin-top: 0.5%;
+   padding-left: 10px;
+   padding-right: 10px;
+   margin-left: -10px;
+}
+.FG-parent-d5-p{
+    border: 1px solid #000;
+   width: 7rem; 
+   height: 4.8vh;
+   border-radius: 20px;
+   font-size: 12px;
+   margin-top: 4%;
+   margin-left: -70px;
+   padding-left: 10%;
+   padding-top: 7%;
+   margin-left: 10px;
+}
+.nig-classified{
+    margin-top: -3%;
+}
+.div-buy-ss{
+display: none;
+}
+.FG-image{
+    height: 15vh;
+}
+.phone-ph{
+    font-size: 1px!important;
+    overflow-x: scroll;
+    height: 5vh;
+    margin-bottom: 10%;
+}
+.premium{
+    display: none;
+}
 }

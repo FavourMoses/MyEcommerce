@@ -13,6 +13,8 @@ import CommunComp from "./communcomp";
 import Footer1 from "../footer/footer1";
 import Footlong from "../footer/footl2";
 import Foot from "../footer/footer";
+import Moblist from "./mobilelist";
+import { FaArrowRight } from "react-icons/fa";
 
 const Community = () => {
      const [loading, setLoading] = useState(false);
@@ -96,6 +98,7 @@ const Community = () => {
                )}
              </button>
            </div>
+
            <button className="commun_button">
              <a href="">
                <p>HOME MAINTENANCE </p>
@@ -137,13 +140,16 @@ const Community = () => {
            </button>
            <div className="communcheck">
              <div className="communcheck2">
-               <img src={checksecond} alt="check" />
-               <h4>Got a verified batch yet? </h4>
-               <p>Get more visibility | Enhance your credibility</p>
+               <img className="coImg" src={checksecond} alt="check" />
+               <div className="cverified">
+                 <h4>Got a verified batch yet? </h4>
+                 <p>Get more visibility | Enhance your credibility</p>
+               </div>
              </div>
              <button className="getstarted">Get started</button>
+             <FaArrowRight className="start_arrow" />
            </div>
-           <h1>Featured Listings</h1>
+           <h1 className="featured">Featured Listings</h1>
 
            <div className="commun-div">
              <div className="co__div3">
@@ -158,7 +164,7 @@ const Community = () => {
              <div className="co__div3">
                <CommunComp
                  comimage={community2}
-                 comh3="PROFFESSIONAL HOME MOVERS..."
+                 comh3="Professional home movers..."
                  comp1="Business Bay"
                  comp2="3 hours ago"
                />
@@ -191,7 +197,9 @@ const Community = () => {
                />
              </div>
            </div>
+           <Moblist />
          </div>
+
          <Footer1 />
          <br />
          <br />

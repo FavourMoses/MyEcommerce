@@ -36,6 +36,7 @@ import Foot from "../footer/footer";
 import Footer1 from "../footer/footer1";
 
 import CircularProgress from "@mui/material/CircularProgress";
+import { PiCopyrightLight } from "react-icons/pi";
 
 const Motor = () => {
   const itemList = [
@@ -309,7 +310,7 @@ const Motor = () => {
           </button>
         </div>
 
-        <p className="popular">Popular in cars</p>
+        <p className="popular-1">Popular in cars</p>
 
         {/* this will appear based on typed input */}
         <div className="categorydiv">
@@ -355,6 +356,16 @@ const Motor = () => {
       <br />
       <Footlong />
       <Foot />
+      <div className="mb-view">
+        <p className="group">
+          Soft <br />
+          <span className="group2">group</span>
+        </p>
+        <p className="foot">
+          <PiCopyrightLight/>
+          softmarket.com 2024, All rights reserved
+        </p>
+      </div>
     </div>
   );
 };

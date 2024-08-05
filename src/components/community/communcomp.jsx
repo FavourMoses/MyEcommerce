@@ -5,7 +5,7 @@ const CommunComp = ({comimage,comh3, comp1, comp2}) => {
          
           <img className="commun-img" src={comimage} alt="image" />
           <a className="comATAG" href="/">
-            <h3>{comh3}</h3>
+            <h3 className="comhead">{comh3}</h3>
           </a>
           <div className="commun-flex">
             <p>{comp1}</p>

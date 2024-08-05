@@ -81,3 +81,42 @@
 .colour-div2 p{
   font-size: 10px;
 }
+
+@media screen and (max-width: 940px) {
+.mdivContainer{
+  margin-top: 30%;
+  margin-left: 3%;
+}
+.advertisement{
+  font-size: 17px;
+}
+.phone_back_ground{
+  height: 15vh;
+}
+}
+
+@media screen and (max-width: 600px) {
+.mdivContainer{
+  margin-top: 50%;
+}
+.phone_back_ground{
+  height: 6vh;
+}
+.buysell{
+  font-size: 16px;
+}
+.under_button{
+  font-size: 12px;
+}
+.phone_row{
+  flex-direction: column;
+}
+.phone-ph{
+  /* line-height: 5px; */
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  width: 100%;
+  margin-top: -7%;
+}
+}

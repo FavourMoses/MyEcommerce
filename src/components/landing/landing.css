@@ -1,3 +1,4 @@
+
 .boss{
   font-size: 40px;
   text-align: center;
@@ -16,6 +17,7 @@
   background-position: center;
   width: 100%;
   height: 60vh;
+  margin-top:1%;
 }
 .hp1{
     /* margin-left: 40%; */
@@ -128,4 +130,93 @@ padding-left: 3%;
   padding-top: 2%;
   font-weight: 550;
   opacity: 96%;
+}
+
+@media screen and (max-width: 600px) {
+ .boss{
+  font-size: 25px;
+} 
+.hd1{
+  height: 20vh;
+  
+}
+.hp1{
+    font-size: 20px;
+    padding-top: 20%;
+}
+.hp2{
+  color: #000000;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 13%;
+}
+.comp1{
+  width: 43%;
+  height: 14vh;
+  margin-bottom: 4.5%;
+}
+.compdiv{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16%;
+  gap: 5%;
+ 
+}
+.compdiv2{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.join{
+  font-size: 17px;
+  margin-top: -5%;
+}
+.group{
+font-size: 22px;
+}
+.group2{
+font-size: 22px;
+padding-left: 6%;
+}
+.foot{
+  font-size: 12px;
+}
+}
+
+@media screen and (max-width: 940px) {
+.boss{
+  font-size: 28px;
+} 
+
+.hp1{
+    font-size: 26px;
+    /* padding-top: 20%; */
+}
+.join{
+  font-size: 17px;
+}
+.hcomp2{
+  flex-wrap: wrap;
+  gap: 30%;
+  line-height: 13px;
+}
+.hcomp3{
+  flex-wrap: wrap;
+  gap: 30%;
+  line-height: 13px;
+}
+.comp1{
+  width: 21%;
+  height: 27vh;
+}
+.group{
+font-size: 20px;
+}
+.group2{
+font-size: 20px;
+padding-left: 6%;
+}
+.foot{
+  font-size: 12px;
+}
 }

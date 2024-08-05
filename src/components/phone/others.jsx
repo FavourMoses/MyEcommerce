@@ -137,7 +137,9 @@ const Others = () => {
           <h1 className="advertisement">Advertisement</h1>
         </div>
         <div>
-          <h1>Buy & sell Mobile Phones, Laptops & Tablets online in Nigeria</h1>
+          <h1 className="buysell">
+            Buy & sell Mobile Phones, Laptops & Tablets online in Nigeria
+          </h1>
 
           <button className="under_button">
             <a href="#">Mobile Phones</a>
@@ -174,7 +176,7 @@ const Others = () => {
       <Footer1 />
       <br />
       <br />
-      <Footlong/>
+      <Footlong />
       <Foot />
     </div>
   );

@@ -19,15 +19,15 @@ const Landing = () => {
       </div>
       <div className="compdiv">
         <Landcomp page="/second" pagecontent="Abuja" />
-        <Landcomp page="/second" pagecontent="Abuja" />
-        <Landcomp page="/second" pagecontent="Abuja" />
-        <Landcomp page="/second" pagecontent="Abuja" />{" "}
+        <Landcomp page="/second" pagecontent="Lagos" />
+        <Landcomp page="/second" pagecontent="Delta" />
+        <Landcomp page="/second" pagecontent="Benin" />{" "}
       </div>
       <div className="compdiv2">
-        <Landcomp page="/second" pagecontent="Abuja" />
-        <Landcomp page="/second" pagecontent="Abuja" />
-        <Landcomp page="/second" pagecontent="Abuja" />
-        <Landcomp page="/second" pagecontent="Abuja" />
+        <Landcomp page="/second" pagecontent="Port-harcourt" />
+        <Landcomp page="/second" pagecontent="Abia" />
+        <Landcomp page="/second" pagecontent="Uyo" />
+        <Landcomp page="/second" pagecontent="Kaduna" />
       </div>
       <p className="join">
         Join millions of users to buy and sell anything in Nigeria

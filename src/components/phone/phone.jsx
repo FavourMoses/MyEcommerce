@@ -69,7 +69,7 @@ const Phone = () => {
           <h1 className="advertisement">Advertisement</h1>
         </div>
         <div>
-          <h1>Buy & sell Mobile Phones & Tablets online in Nigeria</h1>
+          <h1 className="buysell">Buy & sell Mobile Phones & Tablets online in Nigeria</h1>
 
           <button className="under_button">
             <a href="">Mobile Phones</a>
